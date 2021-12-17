@@ -4,26 +4,25 @@
 Brouwer, Evyn 100702629
 
 
+DUCK HUNT
 
+A very simple duck hunt game
 
-Random Dungeon Generator
-This "game" will allow you to generate a random level. 
-Now with walls and doors!
-It can save and load a level and also undo / redo the step by step process for the generation.
-
-![image](https://user-images.githubusercontent.com/26940004/140439567-b8ba9b08-d7eb-4e6c-b8c3-e1fee26260e1.png)
+![image](https://user-images.githubusercontent.com/26940004/146616212-94b10877-65c4-42ab-901d-6d5e382ab442.png)
 
 
 
 
-
-https://user-images.githubusercontent.com/26940004/140439588-24bc111d-8dfc-4dc5-9591-4ce89a6853c6.mp4
-
-
-
-I am the only person currently working on this project.
+I am the only person who worked on this project.
 
 3rd Party Resources used this time around:
+
+https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.Text-text.html
+
+https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+
+https://stackoverflow.com/questions/5289613/generate-random-float-between-two-floats/5289624
+
 
 In-class Labs and Lectures
 - I wouldn't be taking this course if I knew it all from the start
@@ -32,12 +31,8 @@ In-class Labs and Lectures
 
 Tutorial
 
-WASD - Move
+Click to shoot
 
-Space - Jump
-
-F - Interact
-
-Q - Pause/Unpause (releases mouse)
+Esc - Pause/Unpause
 
 Alt-F4 - Close Game
