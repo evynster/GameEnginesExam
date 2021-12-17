@@ -29,8 +29,13 @@ In-class Labs and Lectures
 
 
 Tutorial
+
 WASD - Move
+
 Space - Jump
+
 F - Interact
+
 Q - Pause/Unpause (releases mouse)
+
 Alt-F4 - Close Game
