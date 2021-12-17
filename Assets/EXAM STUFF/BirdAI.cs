@@ -13,10 +13,10 @@ public class BirdAI : MonoBehaviour
     private float directionChangeVar = 0f;
 
     [DllImport("resize")]
-    private static extern Vector2Int generateRoomSize(int minSize, int maxSize);
+    private static extern float getSize(float minSize, float maxSize);
     void Start()
     {
-        float newScale = generateRoomSize(0.5f,1.2f).x;
+        float newScale = getSize(0.5f,1.2f);
         gameObject.transform.localScale = new Vector3(newScale,newScale,newScale);
         upSpeed += Random.Range(0f,1f);
         directionSpeed += Random.Range(0f, 2f);
@@ -25,6 +25,8 @@ public class BirdAI : MonoBehaviour
     
     public void newStart()
     {
+        float newScale = getSize(0.5f, 1.2f);
+        gameObject.transform.localScale = new Vector3(newScale, newScale, newScale);
         upSpeed += Random.Range(0f, 1f);
         directionSpeed += Random.Range(0f, 2f);
         directionChange = Random.Range(0, 5);

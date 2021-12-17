@@ -65,9 +65,9 @@ public class GameManagement : MonoBehaviour
             {
                 if (!birds[i].activeSelf)
                 {
-                    birds[i].SetActive(true);
-                    birds[i].GetComponent<BirdAI>().newStart();
-                    birds[i].transform.position = new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 0f), 0);
+                    SpawnScript birdScript = new SpawnScript();
+                    birdScript.bird = birds[i];
+                    LevelCommandInvoker.AddCommand(birdScript);
                     birdSpawnDelay = Random.Range(0.5f, 2.5f);
                     break;
                 }
